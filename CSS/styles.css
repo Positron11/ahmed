@@ -1,0 +1,140 @@
+/* GLOBAL */
+
+:root {
+    --lilac: #d17cd8;
+    --jet: #343434;
+    --jet-glossy: #343434bd;
+    --mint: #F3FFFB;
+    --mint-glossy: #f3fffb2a;
+}
+
+html, body { 
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 32px;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Mirza', cursive;
+	background-blend-mode: multiply;
+	background-color: rgba(0,0,0,0.6);
+	background-image: url("../Assets/Images/background.png");
+}
+
+
+/* GENERIC */
+
+u {
+	text-decoration-color: var(--lilac);
+	text-decoration-thickness: 0.1em;
+}
+
+
+/* PAGE */
+
+#page {
+	margin: auto;
+	max-width: 1000px;
+	padding: 0 1em 2em 1em;
+}
+
+#content {
+	margin-bottom: 2em;
+}
+
+#content>*:not(:last-child) {
+	margin-bottom: 1em;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+	display: flex;
+	padding: 2.5em 0 1.5em 0;
+	align-items: center;
+	justify-content: space-between;
+	text-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+#nav_banner {
+	font-size: 1.5em;
+}
+
+#nav_links {
+	display: flex;
+	column-gap: 1em;
+}
+
+#nav_links .nav-link {
+	color: inherit;
+	text-decoration-color: transparent;
+	transition: 0.2s ease;
+}
+
+#nav_links .nav-link:hover {
+	text-decoration-color: white;
+	text-shadow: 0 0 7px rgba(255,255,255,0.7);
+}
+
+
+/* HERO */
+
+#hero {
+	text-align: right;
+	margin-bottom: 3em;
+	font-family: 'Cherry Swash', cursive;
+}
+
+#hero_heading {
+	font-size: 3em;
+	font-weight: 700;
+	margin-bottom: 0.3em;
+	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+	animation: glow 5s ease infinite;
+}
+
+#hero_subheading {
+	font-weight: 400;
+	font-size: 1.5em;
+	text-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+
+/* MAIN PAGE NAVIGATION CARDS */
+
+.card {
+	border-radius: 0.2em;
+	background-size: 150px;
+	background-repeat: repeat;
+	backdrop-filter: blur(4px);
+	padding: 1.5em 1em 1em 1em;
+	background-color: rgba(255,255,255,0.1);
+	border-top: 1px solid rgba(96, 119, 144, 0.557);
+	border-left: 1px solid rgba(44, 67, 77, 0.514);
+	border-right: 3px solid rgba(96, 119, 144, 0.557);
+	border-bottom: 4px solid rgba(44, 67, 77, 0.514);
+	background-image: url("../Assets/Images/glass_texture.png");
+}
+
+
+/* FOOTER */
+
+#footer {
+	text-align: center;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes glow{
+	0% {
+		text-shadow: 0px 0px 0px transparent;
+	}
+	50% {
+		text-shadow: 0px 0px 10px rgba(255,255,255,0.7);
+	}
+	100% {
+		text-shadow: 0px 0px 0px transparent;
+	}
+}
